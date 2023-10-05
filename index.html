@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="https://images.vexels.com/media/users/3/127358/isolated/preview/736663fe6f9e03fcb39ace9020c42b4c-icone-estacionario-da-calculadora.png">
+        <link rel="stylesheet" href="styles.css">
+        <title>Calculadora v3.0</title>
+    </head>
+    <body>
+        <div class="calculadora">
+            <div class="borda">
+                <div><h1 class="tela" id="tela"></h1></div>
+
+                <div class="funcoes-topo">
+                    <button type="button" class="btn-especial" onclick=" inserir('%')">%</button>
+                    <button type="button" class="btn-especial" onclick=" inserir('/')">/</button>
+                    <button type="button" class="btn-especial" id="apagar-tudo" onclick=" limpar()">AC</button>
+                </div>
+                
+                <div class="numbers-1">
+                    <button type="button" class="btn" onclick=" inserir('7')">7</button>
+                    <button type="button" class="btn" onclick=" inserir('8')">8</button>
+                    <button type="button" class="btn" onclick=" inserir('9')">9</button>
+                    <button type="button" class="btn-especial" onclick=" inserir('*')">X</button>
+                </div>
+                
+                <div class="numbers-2">
+                    <button type="button" class="btn" onclick=" inserir('4')">4</button>
+                    <button type="button" class="btn" onclick=" inserir('5')">5</button>
+                    <button type="button" class="btn" onclick=" inserir('6')">6</button>
+                    <button type="button" class="btn-especial" onclick=" inserir('-')">-</button>
+                </div>
+        
+                <div class="numbers-3">
+                    <button type="button" class="btn" onclick=" inserir('1')">1</button>
+                    <button type="button" class="btn" onclick=" inserir('2')">2</button>
+                    <button type="button" class="btn" onclick=" inserir('3')">3</button>
+                    <button type="button" class="btn-especial" onclick=" inserir('+')">+</button>
+                </div>
+        
+                <div class="numbers-4">
+                    <button type="button" class="btn" onclick=" inserir('0')">0</button>
+                    <button type="button" class="btn-especial" onclick=" inserir('.')">.</button>
+                    <button type="button" class="btn-especial" id="igual" onclick=" btnigual()">=</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

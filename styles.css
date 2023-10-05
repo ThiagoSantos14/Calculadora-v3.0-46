@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: gray;
+}
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tela {
+    width: 41.6vh;
+    height: 10vh;
+    background: white;
+    margin-bottom: 0.1%;
+    border-radius: 10px;
+}
+
+.borda {
+    border: groove 10px black;
+    border-radius: 10px;
+    box-shadow: 20px 20px 10px black;
+}
+
+button {
+    width: 10vh;
+    height: 10vh;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+span {
+    background: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
+#apagar-tudo {
+    width: 20.3vh;
+    height: 9.5vh;
+    background: white;
+    color: black;
+}
+
+#igual {
+    width: 20.4vh;
+    background: white;
+    color: black;
+}
+
+.style-display {
+    width: 41.6vh;
+    height: 10vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
+    word-wrap: break-word;
+}
